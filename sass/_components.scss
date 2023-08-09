@@ -1,9 +1,54 @@
 .profile-card {
   height: 37rem;
   width: 35rem;
-  border-radius: 10px;
+  border-radius: 15px;
   position: absolute;
   z-index: 1;
   background-color: #fff;
   overflow: hidden;
+  //   box-shadow: ;
+
+  display: grid;
+  grid-template-rows: 3fr 3fr 2fr;
+
+  .card__user {
+    &--img {
+      position: absolute;
+      top: 23%;
+      right: 35%;
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+
+    &--name {
+      font-weight: 700;
+      color: var(--color-very-dark-desaturated-blue);
+    }
+  }
+
+  .card-mid {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-bot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #eee;
+    grid-row: span 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+
+    .user {
+      &-stats {
+        font-weight: 700;
+        color: var(--color-very-dark-desaturated-blue);
+      }
+
+      &-metrics {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
