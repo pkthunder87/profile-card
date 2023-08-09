@@ -47,6 +47,18 @@ body {
   background-color: var(--color-dark-cyan);
 }
 
+.background__circle-top {
+  -webkit-transform: translate(-50%, 10%);
+      -ms-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+}
+
+.background__circle-bot {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
 .profile-card {
   height: 37rem;
   width: 35rem;
@@ -54,18 +66,7 @@ body {
   position: absolute;
   z-index: 1;
   background-color: #fff;
-}
-
-.top {
-  -webkit-transform: translate(-50%, 10%);
-      -ms-transform: translate(-50%, 10%);
-          transform: translate(-50%, 10%);
-}
-
-.bottom {
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%);
+  overflow: hidden;
 }
 
 .attribution {

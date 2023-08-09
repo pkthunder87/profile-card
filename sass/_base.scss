@@ -48,19 +48,10 @@ body {
   background-color: var(--color-dark-cyan);
 }
 
-.profile-card {
-  height: 37rem;
-  width: 35rem;
-  border-radius: 10px;
-  position: absolute;
-  z-index: 1;
-  background-color: #fff;
-}
-
-.top {
+.background__circle-top {
   transform: translate(-50%, 10%);
 }
 
-.bottom {
+.background__circle-bot {
   transform: translateX(50%);
 }
