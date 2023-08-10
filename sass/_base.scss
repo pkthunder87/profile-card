@@ -26,6 +26,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 58.5%;
+  }
 }
 
 body {
@@ -50,8 +54,16 @@ body {
 
 .background__circle-top {
   transform: translate(-52%, 10%);
+
+  @media only screen and (max-width: 400px) {
+    transform: translate(-48%, 10%);
+  }
 }
 
 .background__circle-bot {
   transform: translateX(48%);
+
+  @media only screen and (max-width: 400px) {
+    transform: translate(43%);
+  }
 }

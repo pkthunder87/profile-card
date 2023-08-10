@@ -22,6 +22,11 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58.5%;
+  }
+}
 
 body {
   height: 100vh;
@@ -52,11 +57,25 @@ body {
       -ms-transform: translate(-52%, 10%);
           transform: translate(-52%, 10%);
 }
+@media only screen and (max-width: 400px) {
+  .background__circle-top {
+    -webkit-transform: translate(-48%, 10%);
+        -ms-transform: translate(-48%, 10%);
+            transform: translate(-48%, 10%);
+  }
+}
 
 .background__circle-bot {
   -webkit-transform: translateX(48%);
       -ms-transform: translateX(48%);
           transform: translateX(48%);
+}
+@media only screen and (max-width: 400px) {
+  .background__circle-bot {
+    -webkit-transform: translate(43%);
+        -ms-transform: translate(43%);
+            transform: translate(43%);
+  }
 }
 
 .profile-card {
@@ -129,6 +148,11 @@ body {
 @media only screen and (max-width: 900px) {
   .attribution {
     bottom: 10rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .attribution {
+    bottom: 14rem;
   }
 }
 

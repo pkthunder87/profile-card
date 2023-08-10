@@ -11,6 +11,10 @@
   @media only screen and (max-width: 900px) {
     bottom: 10rem;
   }
+
+  @media only screen and (max-width: 400px) {
+    bottom: 14rem;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
